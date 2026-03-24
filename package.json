@@ -1,0 +1,59 @@
+{
+  "name": "logos-notary",
+  "version": "1.0.0",
+  "description": "Waterproof cryptographic proof-of-existence. SHA-256 + HMAC document notarization with Merkle tree batching, hash-chained audit logs, and multi-signature verification. Zero dependencies.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "notary",
+    "proof-of-existence",
+    "sha256",
+    "hmac",
+    "document-verification",
+    "blockchain",
+    "merkle-tree",
+    "audit-log",
+    "timestamp",
+    "cryptography",
+    "integrity",
+    "fingerprint",
+    "hash",
+    "legal-tech",
+    "fintech",
+    "zero-dependencies"
+  ],
+  "author": "Grace AI Technologies LLC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grace-ai-technologies/logos-notary.git"
+  },
+  "homepage": "https://logos257.com/verify",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  }
+}
